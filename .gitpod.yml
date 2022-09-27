@@ -1,0 +1,27 @@
+image: k33g/e2-core-experiments:0.0.0
+
+tasks:
+  - name: initialize
+    before: |
+      clear
+      echo "🚀 before"
+
+    init: |
+      clear
+      echo "🚀 init"
+
+ports:
+  - port: 8080
+    visibility: public
+  - port: 3000
+    visibility: public
+  - port: 5000
+    visibility: public
+
+vscode:
+  extensions:
+    - golang.go
+    - pkief.material-icon-theme
+    - rust-lang.rust
+    - bungcip.better-toml
+    - aaron-bond.better-comments
